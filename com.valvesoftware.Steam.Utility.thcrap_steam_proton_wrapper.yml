@@ -17,6 +17,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/tactikauan/thcrap-steam-proton-wrapper.git
-        commit: 106df30f47c834f34d5cfa0eea7d0481de7ea088
+        commit: 3adb608f7aa58323f441aedbe40a3b5096fe9d23
       - type: file
         path: com.valvesoftware.Steam.Utility.thcrap_steam_proton_wrapper.metainfo.xml
