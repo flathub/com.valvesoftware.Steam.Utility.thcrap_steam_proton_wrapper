@@ -4,7 +4,7 @@
   <extends>com.valvesoftware.Steam</extends>
   <name>thcrap-steam-proton-wrapper</name>
   <summary>A wrapper script for integrating the Touhou Community Reliant Automatic Patcher into the Steam client.</summary>
-  <url type="homepage">https://github.com/tactikauan/thcrap-steam-proton-wrapper</url>
+  <url type="homepage">https://github.com/nerusuki/thcrap-steam-proton-wrapper</url>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>Unlicense</project_license>
 </component>

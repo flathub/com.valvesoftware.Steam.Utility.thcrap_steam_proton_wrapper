@@ -16,7 +16,7 @@ modules:
       - appstreamcli compose --components=${FLATPAK_ID} --prefix=/ --origin=${FLATPAK_ID} --result-root=${FLATPAK_DEST} --data-dir=${FLATPAK_DEST}/share/app-info/xmls ${FLATPAK_DEST}
     sources:
       - type: git
-        url: https://github.com/tactikauan/thcrap-steam-proton-wrapper.git
+        url: https://github.com/nerusuki/thcrap-steam-proton-wrapper.git
         commit: a5edfe44ead2df2e6bca54bd738ae0dc3284e679
       - type: file
         path: com.valvesoftware.Steam.Utility.thcrap_steam_proton_wrapper.metainfo.xml
