@@ -1,6 +1,6 @@
 app-id: com.valvesoftware.Steam.Utility.thcrap_steam_proton_wrapper
 default-branch: stable
-sdk: org.freedesktop.Sdk//22.08
+sdk: org.freedesktop.Sdk//25.08
 runtime: com.valvesoftware.Steam
 runtime-version: stable
 build-extension: true
@@ -13,10 +13,10 @@ modules:
     build-commands:
       - install -Dm755 thcrap_proton ${FLATPAK_DEST}/bin/thcrap_proton
       - install -Dm644 -t ${FLATPAK_DEST}/share/metainfo ${FLATPAK_ID}.metainfo.xml
-      - appstream-compose --basename=${FLATPAK_ID} --prefix=${FLATPAK_DEST} --origin=flatpak ${FLATPAK_ID}
+      - appstreamcli compose --components=${FLATPAK_ID} --prefix=/ --origin=${FLATPAK_ID} --result-root=${FLATPAK_DEST} --data-dir=${FLATPAK_DEST}/share/app-info/xmls ${FLATPAK_DEST}
     sources:
       - type: git
         url: https://github.com/tactikauan/thcrap-steam-proton-wrapper.git
-        commit: 3adb608f7aa58323f441aedbe40a3b5096fe9d23
+        commit: a5edfe44ead2df2e6bca54bd738ae0dc3284e679
       - type: file
         path: com.valvesoftware.Steam.Utility.thcrap_steam_proton_wrapper.metainfo.xml
